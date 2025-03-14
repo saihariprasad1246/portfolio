@@ -7,13 +7,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-  <nav class="bg-gradient-to-r from-purple-500 to-indigo-600 p-4 fixed top-0 left-0 w-full z-50">
+  <nav class="bg-indigo-600 p-4 sticky top-0 left-0 w-full z-50">
+    <div class="">
     <div class="container mx-auto flex justify-between items-center">
       <a href="#" class="text-white text-2xl font-bold">MyPortfolio</a>
       <div class="md:hidden">
-        <button id="menu-button" class="text-white focus:outline-none">
-          ☰
-        </button>
+        <button id="menu-button" class="text-white focus:outline-none">☰</button>
       </div>
       <ul class="hidden md:flex space-x-8 text-white font-medium">
         <li><a href="#" class="hover:text-yellow-300">Home</a></li>
@@ -23,60 +22,68 @@
         <li><a href="#Skills" class="hover:text-yellow-300">Skills</a></li>
       </ul>
     </div>
-    <ul id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4 text-white text-center">
+    <ul id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4 text-white text-center transition-all duration-300 ease-in-out">
       <li><a href="#" class="hover:text-yellow-300">Home</a></li>
       <li><a href="#about" class="hover:text-yellow-300">About</a></li>
       <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
       <li><a href="#Education" class="hover:text-yellow-300">Education</a></li>
       <li><a href="#Skills" class="hover:text-yellow-300">Skills</a></li>
     </ul>
+  </div>
   </nav>
+  
 
-  <section id="about" class="h-screen bg-gradient-to-br from-purple-200 to-indigo-100 text-gray-800 flex flex-col-reverse md:flex-row items-center justify-center p-8 mt-16">
+  <section id="about" class="h-screen bg-gradient-to-r from-blue-200 to-cyan-100 text-gray-800 flex flex-col-reverse md:flex-row items-center justify-center p-8">
     <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-      <h1 class="text-4xl md:text-6xl font-semibold mb-4 text-pink-600 animate-pulse">Sai Hari Prasad</h1>
-      <p class="text-lg text-gray-700 mb-6">A passionate full-stack developer with expertise in building scalable and efficient web applications. Dedicated to continuous learning and innovation.</p>
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4 text-cyan-600">Sai Hari Prasad</h1>
+      <p class="text-lg text-gray-700 mb-6 leading-relaxed">I'm a passionate full-stack developer with expertise in building scalable and efficient web applications. I thrive on continuous learning and innovation, with a focus on creating seamless user experiences.</p>
       <div class="flex space-x-6 justify-center md:justify-start">
         <a href="https://github.com/saihariprasad1246" target="_blank" class="hover:scale-110 transform transition duration-300">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-8 h-8">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-10 h-10">
         </a>
         <a href="mailto:addagirisaihariprasad@gmail.com" class="hover:scale-110 transform transition duration-300">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="w-8 h-8">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="w-10 h-10">
         </a>
         <a href="https://linkedin.com/in/saihariprasad" target="_blank" class="hover:scale-110 transform transition duration-300">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8 h-8">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-10 h-10">
         </a>
         <a href="./SaiHariPrasadCV.pdf" download class="hover:scale-110 transform transition duration-300">
-          <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download Resume" class="w-8 h-8">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download Resume" class="w-10 h-10">
         </a>
       </div>
     </div>
-    <div class="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg border-4 border-pink-500 animate-fade-in md:order-2">
-      <img src="./Sai_Profile_Photo.png" alt="Your Name" class="w-full h-full rounded-full">
+    <div class="w-52 h-52 md:w-72 md:h-72 rounded-full shadow-2xl border-4 border-cyan-600 overflow-hidden animate-fade-in md:order-2">
+      <img src="./Sai_Profile_Photo.png" alt="Sai Hari Prasad" class="w-full h-full object-cover">
     </div>
   </section>
+  
 
 
-  <section id="Education" class="py-16 bg-gradient-to-br from-purple-300 to-indigo-200 text-gray-800">
+  <section id="Education" class="py-16 bg-cyan-100 text-gray-800">
     <h2 class="text-4xl font-extrabold text-center mb-12">Education</h2>
     <div class="container mx-auto grid gap-8 md:grid-cols-3">
-      <div class="p-6 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
-        <h3 class="text-2xl font-semibold mb-2">B.Tech in Information Technology</h3>
-        <p class="text-gray-200">MIC College of Technology, 2021-2025</p>
-        <p class="text-gray-200">CGPA: 8.4/10</p>
+      <div class="p-6 bg-white rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+        <h3 class="text-3xl font-bold text-cyan-600 mb-2">MIC College of Technology</h3>
+        <p class="text-lg text-gray-700 mb-1">B.Tech in Information Technology</p>
+        <p class="text-md text-gray-500 mb-1">2021-2025</p>
+        <p class="text-md text-gray-500">CGPA: <span class="font-semibold text-cyan-600">8.4/10</span></p>
       </div>
-      <div class="p-6 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
-        <h3 class="text-2xl font-semibold mb-2">Intermediate (MPC)</h3>
-        <p class="text-gray-200">Sri Sarada Junior  College, 2019-2021</p>
-        <p class="text-gray-200">CGPA: 9.4/10</p>
+      <div class="p-6 bg-white rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+        <h3 class="text-3xl font-bold text-cyan-600 mb-2">Sri Sarada Junior College</h3>
+        <p class="text-lg text-gray-700 mb-1">Intermediate (MPC)</p>
+        <p class="text-md text-gray-500 mb-1">2019-2021</p>
+        <p class="text-md text-gray-500">CGPA: <span class="font-semibold text-cyan-600">9.4/10</span></p>
       </div>
-      <div class="p-6 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
-        <h3 class="text-2xl font-semibold mb-2">SSC</h3>
-        <p class="text-gray-200">Dr LHR Govt High School, 2019</p>
-        <p class="text-gray-200">CGPA: 9.5/10</p>
+      <div class="p-6 bg-white rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+        <h3 class="text-3xl font-bold text-cyan-600 mb-2">Dr LHR Govt High School</h3>
+        <p class="text-lg text-gray-700 mb-1">SSC</p>
+        <p class="text-md text-gray-500 mb-1">2019</p>
+        <p class="text-md text-gray-500">CGPA: <span class="font-semibold text-cyan-600">9.5/10</span></p>
       </div>
     </div>
   </section>
+  
+  
 
 
 
